@@ -30,7 +30,7 @@ module.exports = function (options) {
   let headers = {}
   let config
   if (typeof options === 'object') {
-    url = `${base}/v0/users/${options.username}/collections?type=${options.type}&limit=${options.limit}`
+    url = `${base}/v0/users/${options.username}/collections?subject_type=2&type=${options.type}&limit=${options.limit}`
     user_agent = options.user_agent
     headers = options.headers || {}
     config = options.config
