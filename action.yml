@@ -11,6 +11,9 @@ inputs:
   bangumi_username:
     description: 'The your Bangumi username or uid'
     required: true
+  type:
+    description: 'Bangumi collection type'
+    default: 3
   bangumi_limit:
     description: 'Pull limit for Bangumi list'
     default: 10

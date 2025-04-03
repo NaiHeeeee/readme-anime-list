@@ -57,7 +57,8 @@ jobs:
         with:
           target: 'README.md'
           template: 'template/README-eta.md'
-          bangumi_username: '715333'
+          bangumi_username: 'naihe6'
+          type: 3
           bangumi_limit: 10
           user_agent: 'ycs77/ycs77 README'
 
@@ -80,6 +81,12 @@ jobs:
 ### `bangumi_username`
 
 **Required** Bangumi 用戶名稱或 uid。
+
+### `bangumi_username`
+
+預設值：`3`
+
+收藏类型，默认为全部
 
 ### `bangumi_limit`
 

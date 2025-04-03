@@ -8,9 +8,12 @@ try {
   const user_agent = core.getInput('user_agent')
   const targetPath = core.getInput('target')
   const templatePath = core.getInput('template')
+  const type = core.getInput('type')
+
 
   fetchBangumi({
     username: bangumi_username,
+    type: type,
     limit: bangumi_limit,
     user_agent,
   }).then(data => {

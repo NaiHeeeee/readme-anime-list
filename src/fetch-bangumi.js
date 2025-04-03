@@ -10,6 +10,7 @@ const {
  * @typedef Options
  * @type {Object}
  * @property {string} username - Bangumi username or uid.
+ * @property {string} type - Bangumi collection type, default is '3'.
  * @property {number} [limit] -  Fetch list item limit.
  * @property {string} [user_agent] - User agent for Bangumi api.
  * @property {Object.<string,string|number|boolean>} [headers] - Http headers.
@@ -29,13 +30,13 @@ module.exports = function (options) {
   let headers = {}
   let config
   if (typeof options === 'object') {
-    url = `${base}/v0/users/${options.username}/collections?type=3&limit=${options.limit}`
+    url = `${base}/v0/users/${options.username}/collections?type=${options.type}&limit=${options.limit}`
     user_agent = options.user_agent
     headers = options.headers || {}
     config = options.config
   } else {
     url = `${base}${options}`
-    user_agent = 'ycs77/readme-anime-list'
+    user_agent = 'naiheeeee/readme-anime-list'
   }
 
   return new Promise((resolve, reject) => {
