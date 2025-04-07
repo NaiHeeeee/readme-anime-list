@@ -53,14 +53,14 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Update anime list
-        uses: ycs77/readme-anime-list@main
+        uses: naiheeeee/readme-anime-list@main
         with:
           target: 'README.md'
           template: 'template/README-eta.md'
           bangumi_username: 'naihe6'
           type: 3
           bangumi_limit: 10
-          user_agent: 'ycs77/ycs77 README'
+          user_agent: 'naiheeeee/naiheeeee README'
 
       - name: Commit
         uses: EndBug/add-and-commit@v9
@@ -86,7 +86,13 @@ jobs:
 
 預設值：`3`
 
-收藏类型
+收藏类型。
+
+- `1`: 想看
+- `2`: 看过
+- `3`: 在看
+- `4`: 搁置
+- `5`: 抛弃
 
 ### `bangumi_limit`
 

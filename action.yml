@@ -19,7 +19,7 @@ inputs:
     default: 10
   user_agent:
     description: 'User agent for Bangumi API'
-    default: 'ycs77/readme-anime-list'
+    default: 'naiheeeee/readme-anime-list'
 
 runs:
   using: 'node16'
